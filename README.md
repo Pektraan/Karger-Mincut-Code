@@ -9,12 +9,12 @@ All the lines should be terminated with a \n.
 In other words no line should end with a \t.
 Otherwise one has to make minor changes the code in the populatearray part..
 Eg: 
-1 3 4
-2 4 5
+1\t3\t4\n
+2\t4\t5\n
 ...
 is correct
-1 3 4\t
-2 4 5\t
+1\t3\t4\t\n
+2\t4\t5\t\n
 ...
 wont work..
 Also each run takes approximately 5 minutes at 3 GHz clock speed, so one may find it better to reduce the constant NUMOFTIMES..
