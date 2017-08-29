@@ -1,6 +1,6 @@
 # Karger-Mincut-Code
 
-###Code for solving the min-cut problem in graphs using Karger's algorithm
+### Code for solving the min-cut problem in graphs using Karger's algorithm
 
 This is a C language implementation of Karger's algorithm to find the min cut of a graph given its adjacency list. This was done as part of `Week 3` of `Algorithms - Design and Analysis - Part 1`'s Programming Assignment. The algorithm used is from the video lecture.
 
