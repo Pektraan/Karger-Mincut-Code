@@ -31,3 +31,5 @@ wont work..
 
 Also each execution of the program with `NUMOFTIMES` trials in each execution, takes approximately 5 minutes at 3 GHz clock speed, so one may find it better to reduce the constant `NUMOFTIMES`.
 
+### About the algorithm:
+The goal of the algorithm is to find a global min-cut in a graph, which allows parallel edges, in polynomial time. The algorithm chooses an edge randomly and contracts it. This procedure is performed recursively until two nodes remain, which are also known as super nodes.
