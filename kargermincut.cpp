@@ -181,17 +181,16 @@ int main(){
     //Population ends
     struct edge *arr=(struct edge *)malloc(sizeof(struct edge)*12000);
     populatearray(arraypointers,arr);
+    struct edge *arr1=(struct edge *)malloc(sizeof(struct edge)*12000);
     while(counter<NUMOFTIMES){
-
-        struct edge *arr1=(struct edge *)malloc(sizeof(struct edge)*12000);
         arr1=arr;
 
         tempmincut=findmincut(arraypointers,arr1);
         if(tempmincut<smallestmincut)
             smallestmincut=tempmincut;
-        free(arr1);
         counter++;
     }
+    free(arr1);
     //printer(arraypointers);
 
     cout<<"The mincut is "<<smallestmincut<<endl;
